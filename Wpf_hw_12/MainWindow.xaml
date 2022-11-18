@@ -1,0 +1,101 @@
+﻿<Window x:Class="Wpf_hw_12.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_hw_12"
+        mc:Ignorable="d"
+        Title="Keyboard Trainer" Height="460" Width="820" MinWidth="820" MinHeight="460" MaxWidth="820" MaxHeight="460">
+
+    <StackPanel Margin="0,7,0,8">
+        <StackPanel Orientation="Horizontal">
+            <Label>Speed:</Label>
+            <TextBlock Margin="0,5">0</TextBlock>
+            <Label>chars/min</Label>
+            <Label Margin="40,0,0,0">Fails:</Label>
+            <TextBlock Margin="0,5">0</TextBlock>
+            <Label Margin="200,0,0,0">Difficulty:</Label>
+            <TextBlock Margin="0,5,0,0">5</TextBlock>
+            <Slider Margin="50,3,0,0" Width="100"></Slider>
+            <CheckBox Margin="20,5,0,0"></CheckBox>
+            <Label HorizontalAlignment="Right">Case Sensitive</Label>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Style="{DynamicResource St_start_stop}" >Start</Button>
+            <Button Style="{DynamicResource St_start_stop}" >Stop</Button>
+        </StackPanel>
+        <TextBox Height="30" Background="AliceBlue"></TextBox>
+        <TextBox Height="30" Background="AliceBlue"></TextBox>
+        <StackPanel Orientation="Horizontal">
+            <Button Style="{DynamicResource col_pink}">`</Button>
+            <Button Style="{DynamicResource col_pink}">1</Button>
+            <Button Style="{DynamicResource col_pink}">2</Button>
+            <Button Style="{DynamicResource col_yellow}">3</Button>
+            <Button Style="{DynamicResource col_green}">4</Button>
+            <Button Style="{DynamicResource col_blue}">5</Button>
+            <Button Style="{DynamicResource col_blue}">6</Button>
+            <Button Style="{DynamicResource col_violet}">7</Button>
+            <Button Style="{DynamicResource col_violet}">8</Button>
+            <Button Style="{DynamicResource col_pink}">9</Button>
+            <Button Style="{DynamicResource col_yellow}">0</Button>
+            <Button Style="{DynamicResource col_green}">-</Button>
+            <Button Style="{DynamicResource col_green}">=</Button>
+            <Button Width="75">Backspase</Button>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Button Width="75">Tab</Button>
+            <Button Style="{DynamicResource col_pink}">q</Button>
+            <Button Style="{DynamicResource col_yellow}">w</Button>
+            <Button Style="{DynamicResource col_green}">e</Button>
+            <Button Style="{DynamicResource col_blue}">r</Button>
+            <Button Style="{DynamicResource col_blue}">t</Button>
+            <Button Style="{DynamicResource col_violet}">y</Button>
+            <Button Style="{DynamicResource col_violet}">u</Button>
+            <Button Style="{DynamicResource col_pink}">i</Button>
+            <Button Style="{DynamicResource col_yellow}">o</Button>
+            <Button Style="{DynamicResource col_green}">p</Button>
+            <Button Style="{DynamicResource col_green}">[</Button>
+            <Button Style="{DynamicResource col_green}">]</Button>
+            <Button Style="{DynamicResource col_green}">\</Button>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Button Width="88">Caps Lock</Button>
+            <Button Style="{DynamicResource col_pink}">a</Button>
+            <Button Style="{DynamicResource col_yellow}">s</Button>
+            <Button Style="{DynamicResource col_green}">d</Button>
+            <Button Style="{DynamicResource col_blue}">f</Button>
+            <Button Style="{DynamicResource col_blue}">g</Button>
+            <Button Style="{DynamicResource col_violet}">h</Button>
+            <Button Style="{DynamicResource col_violet}">j</Button>
+            <Button Style="{DynamicResource col_pink}">k</Button>
+            <Button Style="{DynamicResource col_yellow}">l</Button>
+            <Button Style="{DynamicResource col_green}">;</Button>
+            <Button Style="{DynamicResource col_green}">'</Button>
+            <Button Width="88">Enter</Button>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="bt_sh" Width="115">Shift</Button>
+            <Button Style="{DynamicResource col_pink}">z</Button>
+            <Button Style="{DynamicResource col_yellow}">x</Button>
+            <Button Style="{DynamicResource col_green}">c</Button>
+            <Button Style="{DynamicResource col_blue}">v</Button>
+            <Button Style="{DynamicResource col_blue}">b</Button>
+            <Button Style="{DynamicResource col_violet}">n</Button>
+            <Button Style="{DynamicResource col_violet}">m</Button>
+            <Button Style="{DynamicResource col_pink}">,</Button>
+            <Button Style="{DynamicResource col_yellow}">.</Button>
+            <Button Style="{DynamicResource col_green}">/</Button>
+            <Button Width="115">Shift</Button>
+        </StackPanel>
+        <StackPanel  Orientation="Horizontal">
+            <Button>Ctrl</Button>
+            <Button>Win</Button>
+            <Button>Alt</Button>
+            <Button Width="280" Background="BurlyWood">Space</Button>
+            <Button>Alt</Button>
+            <Button>Win</Button>
+            <Button>Ctrl</Button>
+        </StackPanel>
+    </StackPanel>
+   
+</Window>
